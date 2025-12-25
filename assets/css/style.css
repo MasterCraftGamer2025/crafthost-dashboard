@@ -1,1 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
 
+.sidebar {
+  width: 230px;
+  position: fixed;
+  height: 100%;
+  background: #020617;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #94a3b8;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar a.active, .sidebar a:hover {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 25px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.plan-card {
+  background: #020617;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  position: relative;
+}
+
+.plan-card h2 {
+  margin-top: 0;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-card ul li {
+  margin: 7px 0;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.plan-card button {
+  width: 100%;
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.plan-card.popular {
+  border: 2px solid #22c55e;
+}
+
+.final {
+  font-weight: bold;
+  color: #c084fc;
+}
+
+.ultimate-btn {
+  background: #a855f7;
+  }
